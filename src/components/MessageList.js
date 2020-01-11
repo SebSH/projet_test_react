@@ -8,14 +8,14 @@ const MessageList = ({messages}) => {
         <div>
             <ul>
             {messages.map((message, i) =>{
-                return <MessageItem key={i} message={message} />;
+                return <MessageItem key={i} message={message} />
             })}
             {messages.length === 0 && <li>
                 Pas de messages
                 </li>}
             </ul>
         </div>
-    )
+    );
 };
 
 export default MessageList;

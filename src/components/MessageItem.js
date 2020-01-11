@@ -7,10 +7,10 @@ const MessageItem = ({message}) => {
         <div>
             <li>
                 <p>@{message.username}</p>
-                <p>{message.body}</p>
+                <p>{message.message}</p>
             </li>
         </div>
-    )
+    );
 };
 
 MessageItem.propTypes = {

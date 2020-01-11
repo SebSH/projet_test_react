@@ -13,7 +13,7 @@ const Login = props => {
     return(
         <div>
         <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="username" bsSize="large">
+        <Form.Group controlId="username" size="large">
           <Form.Control
             autoFocus
             type="username"
@@ -21,12 +21,12 @@ const Login = props => {
             onChange={e => setUsername(e.target.value)}
           />
         </Form.Group>
-        <Button block bsSize="large"  type="submit">
+        <Button block size="large"  type="submit">
           Login
         </Button>
       </Form>
         </div>
-    )
-};
+    );
+}
 
 export default Login;
